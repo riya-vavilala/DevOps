@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User registration</title>
+    <script>
+        function validateForm() {
+            let name=document.getElementById("name").value;
+             let email=document.getElementById("email").value;
+              let password=document.getElementById("password").value;
+
+              if  (name ==="" || email ==="" || password ==="" )
+              {
+                  alert("All fields are required!");
+                  return false;
+              }else{
+                  alert("Registration successful!");
+                  return true;
+              }
+        }
+    </script>
+</head>
+<body>
+<h2>Event Registration Form</h2>
+<form onsubmit="return validateForm()">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="text" id="Email"><br><br>
+    Password: <input type="text" id="Password"><br><br>
+
+    <input type="submit" value= "Register">
+</form>
+<style>
+
+</style>
+</body>
+</html>
